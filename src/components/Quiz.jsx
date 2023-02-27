@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Box, Button, Center, Container, Flex, Grid, GridItem, SimpleGrid } from '@chakra-ui/react';
+import { Box, Button, Center, Flex, SimpleGrid } from '@chakra-ui/react';
 import questions from './Questions';
 
 function Quiz() {
@@ -40,7 +40,7 @@ function Quiz() {
                 bg='rgba(255, 255, 255, 0.425)'
                 maxW='2xl'
                 h='60vh'
-                p={4}
+                p={8}
                 color='black'
                >
                 {isQuizEnd ? (

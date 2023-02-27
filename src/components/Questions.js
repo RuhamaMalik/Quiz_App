@@ -9,12 +9,12 @@ const questions = [
       ],
     },
     {
-      questionText: 'Inside which HTML element do we put the JavaScript?',
+      questionText: '2 + 2 =',
       answerOptions: [
-        { answerText: '<Js>', isCorrect: false },
-        { answerText: '<javaScript>', isCorrect: false },
-        { answerText: '<Scripting>', isCorrect: false },
-        { answerText: '<script>', isCorrect: true },
+        { answerText: '9', isCorrect: false },
+        { answerText: '5', isCorrect: false },
+        { answerText: '8', isCorrect: false },
+        { answerText: '4', isCorrect: true },
 
       ],
     },
@@ -29,12 +29,12 @@ const questions = [
       ],
     },
     {
-        questionText: 'Which operator is used to assign a value to a variable?',
+        questionText: 'A _ C',
         answerOptions: [
-          { answerText: '-', isCorrect: false },
-          { answerText: '*', isCorrect: false },
-          { answerText: '=', isCorrect: true },
-          { answerText: 'x', isCorrect: false },
+          { answerText: 'F', isCorrect: false },
+          { answerText: 'K', isCorrect: false },
+          { answerText: 'B', isCorrect: true },
+          { answerText: 'L', isCorrect: false },
   
         ],
       },
