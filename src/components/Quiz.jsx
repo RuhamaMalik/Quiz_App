@@ -4,14 +4,14 @@ import questions from './Questions';
 
 function Quiz() {
     const [currentQuestion, setCurrentQuestion] = useState(0);
-    const [score, setScore] = useState(0);
+    const [marks, setMarks] = useState(0);
     const [isQuizEnd, setIsQuizEnd] = useState(false);
 
     // handle the selection of an answer
     const handleAnswerClick = (isCorrect) => {
 
         //update Score
-        isCorrect ? setScore(score + 1) : setScore(score)
+        isCorrect ? setMarks(marks + 1) : setMarks(marks)
 
         const nextQuestion = currentQuestion + 1;
 
@@ -27,7 +27,7 @@ function Quiz() {
     // handle restarting the quiz
     const handleRestartClick = () => {
         setCurrentQuestion(0);
-        setScore(0);
+        setMarks(0);
         setIsQuizEnd(false);
     };
 
@@ -48,7 +48,7 @@ function Quiz() {
                         maxW="600px"
                         w="100vw" >
                         <h1>Quiz end!</h1>
-                        <h3>Your score: {score}</h3>
+                        <h3>Your Marks: {marks}</h3>
                         <Button
                         bg="black"
                         color="whiteSmoke"
@@ -88,11 +88,8 @@ function Quiz() {
                                     border='none'
                                     borderRadius="20px"
                                     boxShadow="inset -5px -5px 12px #d9d7d2"
-                                 
-
                                     fontSize="lg"
                                     _hover={{ bg: "grey" }}
-
                                     size='lg'
                                     height='48px'
                                     width='200px'
@@ -102,7 +99,6 @@ function Quiz() {
                                 </Button>
                             ))}
                         </SimpleGrid>
-                        {/* <p>Score: {score}</p> */}
                     </Flex>
                 )}
             </Center>
